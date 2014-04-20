@@ -1,0 +1,27 @@
+name = OpenShift Origins Theme
+description = The theme for the OpenShift Origins community site.
+core = 7.x
+
+base theme = oa_radix
+
+; STYLESHEETS
+;-------------------------------------------------------------------------------
+stylesheets[all][] = stylesheets/os-screen.css
+stylesheets[print][] = stylesheets/os-print.css
+
+stylesheets-conditional[IE][all][] = stylesheets/os-ie.css
+
+; SCRIPTS
+;-------------------------------------------------------------------------------
+; scripts[] = js/examplescript.js
+
+; REGIONS
+;-------------------------------------------------------------------------------
+; Regions are not inherited from parent theme. 
+; Hence, these regions need to stay in sync with oa_radix
+regions[help]         = Help
+regions[navigation]   = Navigation
+regions[menu]         = Menu
+regions[content]      = Content
+regions[footer]       = Footer
+regions[primarytabs]  = Primary tabs

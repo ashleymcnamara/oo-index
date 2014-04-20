@@ -4,8 +4,8 @@
 # First you must fill you github application credentials below.
 #
 
-export GITHUB_CLIENT_ID=$1
-export GITHUB_CLIENT_SECRET=$2
+export GITHUB_CLIENT_ID=$4adb262334587c3bd31c
+export GITHUB_CLIENT_SECRET=$65bb8720dd356b0d7437b07e67a7246f9f18664c
 export OO_INDEX_GITHUB_USERNAME=${3:-openshift}
 export OO_INDEX_GITHUB_REPONAME=${4:-oo-index}
 export OO_INDEX_QUICKSTART_JSON=${5:-wsgi/static/quickstart.json}

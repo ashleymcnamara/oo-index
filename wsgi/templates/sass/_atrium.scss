@@ -1,0 +1,390 @@
+.oa-pane {
+	border: 1px solid #f0f0f0;
+border-bottom: 0;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+margin-bottom: 25px;
+}
+
+.oa-pane.inner-pane .panel-pane {
+	margin-bottom: 0;
+padding-bottom: 0;
+}
+
+.oa-pane .panel-pane {
+color: #3b3b3b;
+background-color: #ffffff;
+border-color: #e3e3e3;
+}
+
+.oa-pane .pane-title {
+color: $red;
+background-color: #F0F0F0;
+background-image: none !important;
+/*
+background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+*/
+margin: 0;
+padding: 10px 15px;
+/*
+border-top-left-radius: 6px;
+border-top-right-radius: 6px;
+*/
+}
+
+.oa-pane .pane-content {
+	padding:15px 15px 15px 15px;
+}
+
+.well {
+	min-height: 20px;
+padding: 19px;
+margin-bottom: 20px;
+background-color: #f5f5f5;
+border: 1px solid #e3e3e3;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+section .well a {
+	margin-bottom: 0;
+}
+
+.content .panel-pane {
+	padding-bottom: 15px;
+}
+
+
+nav.atrium-bar {
+/* 	background-color: #444; */
+	float: left;
+	width: 100%;
+	
+	.oa-breadcrumb {
+		float: left;
+		
+		.oa-breadcrumb {
+			float: left;
+		}
+	}
+	
+	.toggle-tray {
+		float: left;
+	}
+	
+	.oa_toolbar {
+		float: left;
+	}
+}
+
+
+
+#header, .navbar-inner, .navbar-inner .panel-panel, .navbar-inverse .navbar-inner {
+background-color: $red;
+background-image: -moz-linear-gradient(top, #222222, #111111);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+background-image: -webkit-linear-gradient(top, #222222, #111111);
+background-image: -o-linear-gradient(top, #222222, #111111);
+background-image: linear-gradient(to bottom, #222222, #111111);
+border: none;
+box-shadow: none;
+color: #fffeff;
+}
+
+#oa-navbar .panel-panel {
+	background: $red;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+#oa-navbar .panel-panel .panel-pane {
+	border-color: #333333 ! important;
+}
+
+.dropdown-toggle {
+/* 	height: 25px; */
+/*
+line-height: 25px;
+margin: 5px 10px 5px 0;
+*/
+/* padding: 4px 8px; */
+/* background: #333; */
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+}
+
+#oa-navbar ul.dropdown-menu ul li a, ul.dropdown-menu ul li a, .dropdown-menu ul li a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 20px;
+	color: #333;
+	white-space: nowrap;
+}
+
+#header,
+.navbar-inner,
+.navbar-inner .panel-panel,
+.navbar-inverse .navbar-inner {
+background-color: #111111;
+background-image: -moz-linear-gradient(top, #222222, #111111);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+background-image: -webkit-linear-gradient(top, #222222, #111111);
+background-image: -o-linear-gradient(top, #222222, #111111);
+background-image: linear-gradient(to bottom, #222222, #111111);
+border: none;
+box-shadow: none;
+color: #fffeff;
+}
+.navbar-inner .btn,
+.navbar-inverse .btn.btn-inverse,
+.btn-group > .btn .dropdown-toggle,
+#oa-user-badge .user-badge {
+background-color: #333333;
+background-image: -moz-linear-gradient(top, #111111, #333333);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#111111), to(#333333));
+background-image: -webkit-linear-gradient(top, #111111, #333333);
+background-image: -o-linear-gradient(top, #111111, #333333);
+background-image: linear-gradient(to bottom, #111111, #333333);
+box-shadow: none;
+border-color: #333333;
+color: #fffeff;
+}
+.oa-space-menu .navbar-inner {
+  background-image: none;
+}
+.navbar-inverse ul#oa_breadcrumb .btn.btn-inverse,
+.navbar-inner ul#oa_breadcrumb .btn,
+.navbar-inverse #oa-user-badge .user-badge,
+.navbar-inverse #toolbar-menu-button {
+  color: #fffeff;
+}
+.navbar-inverse .nav > li > a,
+.navbar .nav > li > a {
+  color: #fffeff;
+  background-color: transparent !important;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:focus {
+  color: #23aeff;
+}
+.navbar .nav > .active > a:hover,
+.navbar .nav > li > a:hover {
+  color: #018fe2;
+}
+ul#oa_breadcrumb a.dropdown-toggle.btn.btn-inverse,
+.navbar-inner a.dropdown-toggle.btn {
+  background-color: #333333 !important;
+}
+#oa-navbar .panel-panel .panel-pane {
+  border-color: #333333 ! important;
+}
+.caret,
+.navbar-inner .caret {
+border-top: 6px solid #fffeff;
+border-right: 6px solid transparent;
+border-left: 6px solid transparent;
+display: inline-block;
+width: 0;
+height: 0;
+}
+
+.icon-home::before {
+	content:"\f015"
+}
+
+.icon-question-sign::before {
+	content:"\f059"
+}
+
+.icon-star::before {
+	content:"\f005"
+}
+.icon-search::before {
+content:"\f002"
+}
+.atrium-bar {
+background-color: $red;
+	.pull-left, .pull-right {
+		li {
+		float: left;
+		margin-right: 10px;
+		padding: 1em;
+		font-size: 1em;
+		
+		input[type=search] {
+			border-radius: 6px;
+			border: 1px solid white;
+			padding: .25em;
+		}
+		
+		a {color: #fafafa;
+			background-color: rgba(0,0,0,.1);
+			padding: .5em;
+			border-radius: 6px;
+			}
+		}
+	}
+}
+
+#oa-navbar .panel-panel .pane-oa-navigation {
+	background-color: #eee !important;
+	border-bottom: none;
+}
+
+.oa-event-date-month-wrapper {
+	background-color: $red;
+}
+
+.moscone-container {
+	background-color: $red;
+}
+
+.oa-menu-banner img {
+    padding: 1em;
+    width: 75%;
+}
+
+.navbar .oa-navigation .nav {
+	background-color: #fff;
+    border-radius: 3px;
+/*     display: inline-block; */
+    float: right;
+    position: relative;
+    top: 50%;
+/*
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+*/
+	margin: 20px 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.main-menu {
+	width: 100%;	
+}
+
+#oa-navbar .panel-panel .pane-oa-navigation .pane-content ul.nav > li > a {
+	color: rgb(64, 64, 64);
+	font-size: 17px;
+	padding: 18px 24px;
+	opacity: .8;
+	
+	&:hover {
+		opacity: 1 !important;
+	}
+}
+
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group > .dropdown-toggle {
+	background-color: rgba(255,255,255,.9);
+}
+
+#main {
+	margin-top: 25px;
+}
+
+a#ui-id-1.ui-tabs-anchor,a#ui-id-2.ui-tabs-anchor {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
+	background: none;
+}
+
+.pane-bundle-spotlight .ui-tabs .ui-tabs-nav li.ui-state-default {
+	border: none !important;
+    margin: 0 0 0 10px;
+}
+
+.pane-bundle-spotlight .ui-tabs .ui-tabs-nav li {
+	border-bottom: none !important;
+	border-radius: 0px !important;
+}
+
+.pane-bundle-spotlight .ui-tabs .ui-tabs-nav li.ui-state-default {
+}
+
+.item-list ul li {
+	list-style-type: none;
+}
+
+#page-title {
+	font-size: 36px;
+    line-height: 1.6em;
+}
+
+.pane-bundle-spotlight .panopoly-spotlight-label {
+	opacity: 1;
+	background-color: rgba(255,255,255,.85);
+	padding: 20px;
+	font-size: 30px;
+}
+.pane-bundle-spotlight .panopoly-spotlight-info {
+	opacity: 1;
+	background-color: rgba(0,0,0,.75);
+	padding: 20px;
+}
+
+.pane-bundle-spotlight .panopoly-spotlight-wrapper p {
+	font-size: 1em;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.oa-event-date-wrapper {
+	margin: 5px 20px 5px 0;
+	height: 50px;
+	width: 50px;
+	border-color: #eee;
+	}
+	
+	.oa-event-date-month-wrapper {
+		height: 40%;
+	}
+.oa-event-date-month {
+	font-size: .75em;
+}
+.oa-event-date-day {
+font-size: 1.25em;
+    padding-top: 2px;
+    font-weight: 600;
+    }
+    
+    .date-display-single {
+    font-size: 0.75em;
+}
+
+.view-display-id-oa_events_upcoming_small .views-row{
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 10px 0;
+}
+
+#oa-navbar .panel-panel .pane-oa-dashboard-oa-breadcrumb ul.oa_toolbar li.btn-group ul.dropdown-menu li h3 {
+	padding: 8px 10px;
+	background: #f0f0f0;
+}
+
+#oa-navbar ul.dropdown-menu ul li a, ul.dropdown-menu ul li a, .dropdown-menu ul li a {
+	padding: 7px 10px;
+	
+	&:hover {background: $red;}
+}
+
+.dropdown-menu {
+	padding: 0;
+}
+
+.pane-bundle-video h3 {
+	margin-bottom: 0;
+	padding: 10px;
+	line-height: 1.4em;
+	background: #f0f0f0;
+}

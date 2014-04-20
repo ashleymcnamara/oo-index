@@ -47,16 +47,16 @@ app.config['JS_BUNDLES'] = {
 Funnel(app)
 
 try:
-    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'change-me')
-    app.config['GITHUB_CLIENT_ID'] = os.environ['GITHUB_CLIENT_ID']
-    app.config['GITHUB_CLIENT_SECRET'] = os.environ['GITHUB_CLIENT_SECRET']
+    app.config['SECRET_KEY'] = os.environ.get('65bb8720dd356b0d7437b07e67a7246f9f18664c', 'change-me')
+    app.config['GITHUB_CLIENT_ID'] = os.environ['4adb262334587c3bd31c']
+    app.config['GITHUB_CLIENT_SECRET'] = os.environ['65bb8720dd356b0d7437b07e67a7246f9f18664c']
 except KeyError, ex:
-    app.config['GITHUB_CLIENT_ID'] = 'FAKE-CLIENT-ID'
-    app.config['GITHUB_CLIENT_SECRET'] = 'FAKE-CLIENT-SECRET'
+    app.config['GITHUB_CLIENT_ID'] = '4adb262334587c3bd31c'
+    app.config['GITHUB_CLIENT_SECRET'] = '65bb8720dd356b0d7437b07e67a7246f9f18664c'
     print >>sys.stderr, "Missing config: %s (Please fix)" % ex
 
 try:
-    app.config['GITHUB_CALLBACK_URL'] = 'https://' + os.environ['OPENSHIFT_APP_DNS'] + '/login/callback'
+    app.config['GITHUB_CALLBACK_URL'] = 'https://index-$namespace.rhcloud.com' + os.environ['OPENSHIFT_APP_DNS'] + '/login/callback'
 except KeyError:
     app.config['GITHUB_CALLBACK_URL'] = 'http://localhost:5000' + '/login/callback'
 
@@ -64,7 +64,7 @@ except KeyError:
 app.config['OO_INDEX_GITHUB_USERNAME'] = os.environ.get('OO_INDEX_GITHUB_USERNAME', 'openshift')
 app.config['OO_INDEX_GITHUB_REPONAME'] = os.environ.get('OO_INDEX_GITHUB_REPONAME', 'oo-index')
 #XXX: we're using quickstart.json from git repo itself.
-app.config['OO_INDEX_QUICKSTART_JSON'] = os.environ.get('OO_INDEX_QUICKSTART_JSON', 'wsgi/static/quickstart.json').strip('/')
+app.config['OO_INDEX_QUICKSTART_JSON'] = os.environ.get('OO_INDEX_QUICKSTART_JSON', '/Users/ashley/Documents/oo-index/wsgi/quickstart.json').strip('/')
 
 if 'OPENSHIFT_REPO_DIR' in os.environ:
     app.config['OO_INDEX_QUICKSTART_JSON_FULLPATH'] = os.path.join(os.environ['OPENSHIFT_REPO_DIR'], app.config['OO_INDEX_QUICKSTART_JSON'])
