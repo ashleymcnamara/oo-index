@@ -47,12 +47,12 @@ app.config['JS_BUNDLES'] = {
 Funnel(app)
 
 try:
-    app.config['SECRET_KEY'] = os.environ.get('65bb8720dd356b0d7437b07e67a7246f9f18664c', 'change-me')
-    app.config['GITHUB_CLIENT_ID'] = os.environ['4adb262334587c3bd31c']
-    app.config['GITHUB_CLIENT_SECRET'] = os.environ['65bb8720dd356b0d7437b07e67a7246f9f18664c']
+    app.config['SECRET_KEY'] = os.environ.get('', 'change-me')
+    app.config['GITHUB_CLIENT_ID'] = os.environ['']
+    app.config['GITHUB_CLIENT_SECRET'] = os.environ['']
 except KeyError, ex:
-    app.config['GITHUB_CLIENT_ID'] = '4adb262334587c3bd31c'
-    app.config['GITHUB_CLIENT_SECRET'] = '65bb8720dd356b0d7437b07e67a7246f9f18664c'
+    app.config['GITHUB_CLIENT_ID'] = ''
+    app.config['GITHUB_CLIENT_SECRET'] = ''
     print >>sys.stderr, "Missing config: %s (Please fix)" % ex
 
 try:
